@@ -1,0 +1,63 @@
+<div [ngClass]="{ 'nav-active': openNav, 'navbar-wrapper': true }">
+  <div class="nav-wrapper">
+    <div class="log" #logo>VERNICA</div>
+    <div class="nav-button" (click)="openNav = !openNav">
+      <div class="bar bar1"></div>
+      <div class="bar2 bar"></div>
+    </div>
+  </div>
+  <div class="nav-options-wrapper">
+    <div class="nav-options">
+      <a class="nav-option" (click)="navigateTo('/home')">
+        <div class="navbar-link">
+          <div class="nav-rotate-1st">H</div>
+          <div class="nav-rotate-2st">O</div>
+          <div class="nav-rotate-3st">M</div>
+          <div class="nav-rotate-4st">E</div>
+        </div>
+        <div class="navbar-hidden-link">
+          <div class="nav-hidden-rotate-1st">H</div>
+          <div class="nav-hidden-rotate-2st">O</div>
+          <div class="nav-hidden-rotate-3st">M</div>
+          <div class="nav-hidden-rotate-4st">E</div>
+        </div>
+      </a>
+      <a class="nav-option" (click)="navigateTo('/about')">
+        <div class="navbar-link">
+          <div class="nav-rotate-1st">A</div>
+          <div class="nav-rotate-2st">B</div>
+          <div class="nav-rotate-3st">O</div>
+          <div class="nav-rotate-4st">U</div>
+          <div class="nav-rotate-5st">T</div>
+        </div>
+        <div class="navbar-hidden-link">
+          <div class="nav-hidden-rotate-1st">A</div>
+          <div class="nav-hidden-rotate-2st">B</div>
+          <div class="nav-hidden-rotate-3st">O</div>
+          <div class="nav-hidden-rotate-4st">U</div>
+          <div class="nav-hidden-rotate-5st">T</div>
+        </div>
+      </a>
+      <a class="nav-option" (click)="navigateTo('/contact')">
+        <div class="navbar-link">
+          <div class="nav-rotate-1st">C</div>
+          <div class="nav-rotate-2st">O</div>
+          <div class="nav-rotate-3st">N</div>
+          <div class="nav-rotate-4st">T</div>
+          <div class="nav-rotate-5st">A</div>
+          <div class="nav-rotate-5st">C</div>
+          <div class="nav-rotate-5st">T</div>
+        </div>
+        <div class="navbar-hidden-link">
+          <div class="nav-hidden-rotate-1st">C</div>
+          <div class="nav-hidden-rotate-2st">O</div>
+          <div class="nav-hidden-rotate-3st">N</div>
+          <div class="nav-hidden-rotate-4st">T</div>
+          <div class="nav-hidden-rotate-5st">A</div>
+          <div class="nav-hidden-rotate-5st">C</div>
+          <div class="nav-hidden-rotate-5st">T</div>
+        </div>
+      </a>
+    </div>
+  </div>
+</div>
