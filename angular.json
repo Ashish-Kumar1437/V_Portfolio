@@ -35,7 +35,7 @@
             "scripts": []
           },
           "configurations": {
-            "production": {
+            "staging": {
               "budgets": [
                 {
                   "type": "initial",
@@ -50,13 +50,26 @@
               ],
               "outputHashing": "all"
             },
-            "development": {
-              "buildOptimizer": false,
-              "optimization": false,
-              "vendorChunk": true,
-              "extractLicenses": false,
-              "sourceMap": true,
-              "namedChunks": true
+            "production": {
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "10mb",
+                  "maximumError": "20mb"
+                },
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "10mb",
+                  "maximumError": "20mb"
+                }
+              ],
+              "outputHashing": "all",
+              "fileReplacements": [
+                {
+                  "replace": "src/environments/environment.ts",
+                  "with": "src/environments/environment.prod.ts"
+                }
+              ]
             }
           },
           "defaultConfiguration": "production"
@@ -67,11 +80,11 @@
             "production": {
               "browserTarget": "Portfolio:build:production"
             },
-            "development": {
-              "browserTarget": "Portfolio:build:development"
+            "staging": {
+              "browserTarget": "Portfolio:build:staging"
             }
           },
-          "defaultConfiguration": "development"
+          "defaultConfiguration": "staging"
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",

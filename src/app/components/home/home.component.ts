@@ -2,6 +2,7 @@ import { Component, ElementRef, QueryList, ViewChildren } from '@angular/core';
 import { PreloaderService } from '../../services/preloader.service';
 import { gsap } from 'gsap';
 import {CONSTANT_ASSETS} from '../../constants/assets'
+import { environment } from '../../../environments/environment';
 
 @Component({
   selector: 'app-home',
@@ -10,6 +11,7 @@ import {CONSTANT_ASSETS} from '../../constants/assets'
 })
 export class HomeComponent {
 
+  environment = environment;
   assets = CONSTANT_ASSETS;
 
   @ViewChildren('intro') introText!: QueryList<ElementRef>
