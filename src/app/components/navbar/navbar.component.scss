@@ -11,7 +11,7 @@
     z-index: 100;
 
     .log {
-      color: #e9dfce;
+      color: #ffbf69;
       // font-family: "Bodoni Moda", serif;
       font-size: 2rem;
     }
@@ -22,8 +22,8 @@
       align-items: center;
       justify-content: center;
       gap: 8px;
-      width: 3vw;
-      height: 3vw;
+      width: 3rem;
+      height: 3rem;
       border-radius: 50%;
 
       .bar {
@@ -41,9 +41,9 @@
   .nav-options-wrapper {
     width: 100%;
     height: 100vh;
-    background-color: #FFBF69;
+    background-color: #ffbf69;
     position: fixed;
-    top: -100%;
+    top: -110%;
     left: 0;
     transition: top 0.5s ease-out;
     z-index: 99;
@@ -64,10 +64,13 @@
         .navbar-hidden-link {
           display: flex;
           font-size: 7vw;
-          font-family: 'Playfair Display SC', serif;
+          font-family: "Playfair Display SC", serif;
           height: 100%;
           width: 100%;
           justify-content: space-evenly;
+          @media screen and (max-width: 700px) {
+            font-size: 14vw;
+          }
 
           .nav-rotate-1st,
           .nav-hidden-rotate-1st {
@@ -139,7 +142,7 @@
     .nav-button {
       background-color: #00000017;
       .bar {
-        background-color: #0C1A1A;
+        background-color: #0c1a1a;
       }
       .bar1 {
         transform: translate3d(0px, 6px, 0px) scale3d(1, 1, 1) rotateX(0deg)

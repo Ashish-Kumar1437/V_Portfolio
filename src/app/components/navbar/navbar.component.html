@@ -1,7 +1,7 @@
 <div [ngClass]="{ 'nav-active': openNav, 'navbar-wrapper': true }">
   <div class="nav-wrapper">
-    <div class="log" #logo>VERNICA</div>
-    <div class="nav-button" (click)="openNav = !openNav">
+    <div class="log" #logo>Vernica</div>
+    <div class="nav-button" appCursorHover cursorSize="2" oppositeDirectionMove movementSpeed="0.5" (click)="openNav = !openNav">
       <div class="bar bar1"></div>
       <div class="bar2 bar"></div>
     </div>

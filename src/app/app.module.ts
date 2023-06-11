@@ -8,6 +8,10 @@ import { HomeComponent } from './components/home/home.component';
 import { PreloaderComponent } from './components/preloader/preloader.component';
 import { AboutComponent } from './components/about/about.component';
 import { ContactComponent } from './components/contact/contact.component';
+import { GalleryComponent } from './components/gallery/gallery.component';
+import { OppositeDirectionMoveDirective } from './directives/opposite-direction-move.directive';
+import { CustomCursorComponent } from './components/custom-cursor/custom-cursor.component';
+import { CursorHoverDirective } from './directives/cursor-hover.directive';
 
 @NgModule({
   declarations: [
@@ -16,13 +20,17 @@ import { ContactComponent } from './components/contact/contact.component';
     HomeComponent,
     PreloaderComponent,
     AboutComponent,
-    ContactComponent
+    ContactComponent,
+    GalleryComponent,
+    OppositeDirectionMoveDirective,
+    CustomCursorComponent,
+    CursorHoverDirective
   ],
   imports: [
     BrowserModule,
     AppRoutingModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
 export class AppModule { }

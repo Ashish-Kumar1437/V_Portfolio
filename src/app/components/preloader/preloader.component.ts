@@ -17,13 +17,15 @@ export class PreloaderComponent {
   }
 
   ngAfterViewInit() {
+    console.log(this.preloaderWrapper.nativeElement)
     this.timeline
       .to(this.left.nativeElement, { x: 0, duration: 1 })
-      .to(this.right.nativeElement, { x: 0, duration: 0.75 }, '<0.25')
+      .to(this.right.nativeElement, { x: 0, duration: 1 }, '<0' )
       .to(this.preloaderWrapper.nativeElement, {
-        y: '-110vh',
+        y: '-130vh',
         duration: 1,
         ease: 'circ.out',
       });
+      
   }
 }
