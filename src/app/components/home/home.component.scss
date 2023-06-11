@@ -28,6 +28,7 @@
         background-image: url("../../../assets/back.png");
         background-position: 0 0;
         background-size: cover;
+        background-clip: text;
         -webkit-background-clip: text;
         animation: text-bg 20s linear infinite;
       }
