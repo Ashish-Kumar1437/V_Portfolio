@@ -19,11 +19,11 @@ export class PreloaderComponent {
   ngAfterViewInit() {
     console.log(this.preloaderWrapper.nativeElement)
     this.timeline
-      .to(this.left.nativeElement, { x: 0, duration: 1 })
-      .to(this.right.nativeElement, { x: 0, duration: 1 }, '<0' )
+      .to(this.left.nativeElement, { x: 0, duration: 1.25 })
+      .to(this.right.nativeElement, { x: 0, duration: 1.25 }, '<0' )
       .to(this.preloaderWrapper.nativeElement, {
         y: '-130vh',
-        duration: 1,
+        duration: 1.5,
         ease: 'circ.out',
       });
       

@@ -21,7 +21,7 @@
       }
       h1 {
         transform: translateY(100%);
-        font-size: 8rem;
+        font-size: 6rem;
         text-transform: uppercase;
         color: transparent;
         -webkit-text-stroke: 1px #6acfc7;
@@ -46,6 +46,12 @@
       }
     }
   }
+  // .photo{
+  //   width: 50%;
+  //   img{
+  //     width: 100%;
+  //   }
+  // }
 }
 
 @keyframes text-bg {

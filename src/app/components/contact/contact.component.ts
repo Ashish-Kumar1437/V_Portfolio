@@ -14,6 +14,6 @@ export class ContactComponent {
 
     setTimeout(() => {
       this.preloaderService.stopLoading();
-    }, 2000);
+    }, 2800);
   }
 }

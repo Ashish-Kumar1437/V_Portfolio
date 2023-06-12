@@ -21,14 +21,14 @@ export class HomeComponent {
   ngOnInit() {
     // this.preloaderService.startLoading();
 
-    setTimeout(() => {
-      this.preloaderService.stopLoading();
-    }, 2000);
+    // setTimeout(() => {
+    //   this.preloaderService.stopLoading();
+    // }, 2800);
   }
 
   ngAfterViewInit(){
     this.introText.forEach(intro =>{
-      gsap.to(intro.nativeElement,{y:0,duration:0.75,delay:1.5})
+      gsap.to(intro.nativeElement,{y:0,duration:0.75,delay:1.75})
     })
   }
 }
